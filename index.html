@@ -1,1 +1,63 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Configurações do PAI 
+        flex-direction 
+         - flex-direction: row -- linha (padrão)
+         -- Alinhamento da esquerda para direita
+         - flex-direction: row-reverse -- linha
+         -- Alinhamento da direita para esquerda
+         - flex-direction: column - coluna (padrão)
+         -- Alinhamento em coluna de cima para baixo
+         - flex-direction: column-reverse - coluna 
+         -- Alinhamento em coluna debaixo para cima 
+         -------------------------------------------
+         Eixos (axis)
+         - main-axis -- Eixo principal
+         -- Possui dois pontos principais
+         -- main-start (início) e o main-end (Fim)
+         - cross-axis (Eixo transversal)
+         -- cross-star e o cross-end */
+         /* Parei em 9:52 Direções e Eixos Flexbox CSS */
 
+        /* Pai */
+        div.conteiner{
+            background-color: lightsalmon;
+            display: flex;  /* Padrão */
+            /* Mostrar ...
+            flex-direction: row; 
+            flex-direction: row-reverse; 
+            flex-direction: column; 
+            flex-direction: column-reverse; 
+            */
+        }
+        /* Filhos */
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+
+            flex:auto; /* Padrão */
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Pai -->
+    <div class="conteiner">
+         <!-- Filhos  -->
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
